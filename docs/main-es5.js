@@ -71,7 +71,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\" >\n    <hr>\n     <div class=\"row\">\n       <div class=\"col\">\n             © 2019 David Yuan App All rights reserved    \n      </div>\n       <div class=\"col\"[routerLink]=\"['/terms']\">\n          Click here for the terms and conditions\n       </div>\n     </div>\n   ";
+    __webpack_exports__["default"] = "<div class=\"container\" >\n    <hr>\n     <div class=\"row\">\n       <div class=\"col\">\n             © 2021 David Yuan App All rights reserved    \n      </div>\n       <div class=\"col\"[routerLink]=\"['/resume']\">\n          Click Here For My Resume!\n       </div>\n     </div>\n   ";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div style=\"justify-content: center;\">\n    <div class=\"container\" style=\"width: 50%; height: auto; margin-left: 25%; display: inline-block; text-align: left;\">\n        <img src=\"/assets/images/me.png\" alt=\"avatar\" width=\"30%\" style=\"float:left; padding: 1%;\"/>\n        <div class=\"card\" style=\"width: auto; height: auto; margin-top: 1%; margin-left: 20%; padding: 30px;\">\n            <p>//Sentences about how cool I am//</p>\n            </div>\n    </div>\n    <div class=\"container\" style=\"width:50%; height:auto; margin-left:25.5%; display: inline-block; text-align: left;\">\n        <h2>David Yuan</h2>\n        <a href = \"mailto:davidy804@gmail.com\">davidy804@gmail.com</a>\n    </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div style=\"justify-content: center;\">\n    <div class=\"container\" style=\"width: 50%; height: auto; margin-left: 25%; display: inline-block; text-align: left;\">\n        <img src=\"/assets/images/me.png\" alt=\"avatar\" width=\"30%\" style=\"float:left; padding: 1%;\"/>\n        <div class=\"card\" style=\"width: auto; height: auto; margin-top: 1%; margin-left: 20%; padding: 30px;\">\n            <p>Hello! Thank you for checking out my portfolio!</p>\n            <p>I have a Bachelor's Degree in Business Information Systems at VCU.</p>\n            <p>I am interested in software and web development. I also enjoy analyzing data and working with databases.</p>\n            <p>I have a passion for learning about new technologies, hobbies, or just about anything that has an amazing community behind it.</p>\n            <p>If you have any opportunites that you think would fit me, please reach out to me!</p>\n            </div>\n    </div>\n    <div class=\"container\" style=\"width:50%; height:auto; margin-left:25.5%; display: inline-block; text-align: left;\">\n        <h2>David Yuan</h2>\n        <a href = \"mailto:davidy804@gmail.com\">davidy804@gmail.com</a>\n    </div>\n</div>\n";
     /***/
   },
 
@@ -136,22 +136,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/terms/terms.component.html":
-  /*!**********************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/terms/terms.component.html ***!
-    \**********************************************************************************/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/resume/resume.component.html":
+  /*!************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/resume/resume.component.html ***!
+    \************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppTermsTermsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppResumeResumeComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\" >\n    <div class=\"row\">\n        <p><strong>Terms and Conditions as follows:</strong>\n        <br>\n        <li>Introduction</li>\n        <li>Termination</li>\n        <li>Governing Law</li>\n        <li>Changes</li>\n        <li>Contact</li>\n        </p>\n      </div>\n    </div>\n  ";
+    __webpack_exports__["default"] = "<div class=\"container\">\n  <pdf-viewer [src]=\"doc\" [render-text]=\"true\" style=\"display: block;\"></pdf-viewer>\n</div>";
     /***/
   },
 
@@ -871,7 +871,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
 
-      this.title = 'info451';
+      this.title = 'gitpages';
     };
 
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -956,9 +956,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _terms_terms_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./terms/terms.component */
-    "./src/app/terms/terms.component.ts");
+    var _resume_resume_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./resume/resume.component */
+    "./src/app/resume/resume.component.ts");
     /* harmony import */
 
 
@@ -971,14 +971,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _projects_projects_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./projects/projects.component */
     "./src/app/projects/projects.component.ts");
+    /* harmony import */
+
+
+    var ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ng2-pdf-viewer */
+    "./node_modules/ng2-pdf-viewer/fesm2015/ng2-pdf-viewer.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"], _terms_terms_component__WEBPACK_IMPORTED_MODULE_8__["TermsComponent"], _projects_projects_component__WEBPACK_IMPORTED_MODULE_10__["ProjectsComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"], _resume_resume_component__WEBPACK_IMPORTED_MODULE_8__["ResumeComponent"], _projects_projects_component__WEBPACK_IMPORTED_MODULE_10__["ProjectsComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_11__["PdfViewerModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
@@ -1019,9 +1025,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _terms_terms_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./terms/terms.component */
-    "./src/app/terms/terms.component.ts");
+    var _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./resume/resume.component */
+    "./src/app/resume/resume.component.ts");
     /* harmony import */
 
 
@@ -1033,8 +1039,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       path: 'home',
       component: _home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"]
     }, {
-      path: 'terms',
-      component: _terms_terms_component__WEBPACK_IMPORTED_MODULE_2__["TermsComponent"]
+      path: 'resume',
+      component: _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__["ResumeComponent"]
     }, {
       path: 'projects',
       component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_3__["ProjectsComponent"]
@@ -1369,43 +1375,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/terms/terms.component.css":
-  /*!*******************************************!*\
-    !*** ./src/app/terms/terms.component.css ***!
-    \*******************************************/
+  "./src/app/resume/resume.component.css":
+  /*!*********************************************!*\
+    !*** ./src/app/resume/resume.component.css ***!
+    \*********************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppTermsTermsComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppResumeResumeComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Rlcm1zL3Rlcm1zLmNvbXBvbmVudC5jc3MifQ== */";
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jlc3VtZS9yZXN1bWUuY29tcG9uZW50LmNzcyJ9 */";
     /***/
   },
 
   /***/
-  "./src/app/terms/terms.component.ts":
-  /*!******************************************!*\
-    !*** ./src/app/terms/terms.component.ts ***!
-    \******************************************/
+  "./src/app/resume/resume.component.ts":
+  /*!********************************************!*\
+    !*** ./src/app/resume/resume.component.ts ***!
+    \********************************************/
 
-  /*! exports provided: TermsComponent */
+  /*! exports provided: ResumeComponent */
 
   /***/
-  function srcAppTermsTermsComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppResumeResumeComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "TermsComponent", function () {
-      return TermsComponent;
+    __webpack_require__.d(__webpack_exports__, "ResumeComponent", function () {
+      return ResumeComponent;
     });
     /* harmony import */
 
@@ -1420,28 +1426,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
 
-    var TermsComponent = /*#__PURE__*/function () {
-      function TermsComponent() {
-        _classCallCheck(this, TermsComponent);
+    var ResumeComponent = /*#__PURE__*/function () {
+      function ResumeComponent() {
+        _classCallCheck(this, ResumeComponent);
+
+        this.doc = "../assets/pdfs/resume.pdf";
       }
 
-      _createClass(TermsComponent, [{
+      _createClass(ResumeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
       }]);
 
-      return TermsComponent;
+      return ResumeComponent;
     }();
 
-    TermsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-terms',
+    ResumeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-resume',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./terms.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/terms/terms.component.html"))["default"],
+      /*! raw-loader!./resume.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/resume/resume.component.html"))["default"],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./terms.component.css */
-      "./src/app/terms/terms.component.css"))["default"]]
-    })], TermsComponent);
+      /*! ./resume.component.css */
+      "./src/app/resume/resume.component.css"))["default"]]
+    })], ResumeComponent);
     /***/
   },
 
@@ -1556,6 +1564,81 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     module.exports = __webpack_require__(
     /*! C:\Users\David\gitpages\src\main.ts */
     "./src/main.ts");
+    /***/
+  },
+
+  /***/
+  1:
+  /*!**********************!*\
+    !*** zlib (ignored) ***!
+    \**********************/
+
+  /*! no static exports found */
+
+  /***/
+  function _(module, exports) {
+    /* (ignored) */
+
+    /***/
+  },
+
+  /***/
+  2:
+  /*!********************!*\
+    !*** fs (ignored) ***!
+    \********************/
+
+  /*! no static exports found */
+
+  /***/
+  function _(module, exports) {
+    /* (ignored) */
+
+    /***/
+  },
+
+  /***/
+  3:
+  /*!**********************!*\
+    !*** http (ignored) ***!
+    \**********************/
+
+  /*! no static exports found */
+
+  /***/
+  function _(module, exports) {
+    /* (ignored) */
+
+    /***/
+  },
+
+  /***/
+  4:
+  /*!***********************!*\
+    !*** https (ignored) ***!
+    \***********************/
+
+  /*! no static exports found */
+
+  /***/
+  function _(module, exports) {
+    /* (ignored) */
+
+    /***/
+  },
+
+  /***/
+  5:
+  /*!*********************!*\
+    !*** url (ignored) ***!
+    \*********************/
+
+  /*! no static exports found */
+
+  /***/
+  function _(module, exports) {
+    /* (ignored) */
+
     /***/
   }
 }, [[0, "runtime", "vendor"]]]);
