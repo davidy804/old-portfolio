@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { TermsComponent } from './terms/terms.component';
+import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './projects/projects.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -17,13 +18,14 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    TermsComponent,
+    ResumeComponent,
     ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    PdfViewerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
