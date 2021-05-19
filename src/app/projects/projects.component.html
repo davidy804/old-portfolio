@@ -1,10 +1,12 @@
-<div class="product-list" style="justify-content: center">
-    <div class="card"
-      style="width: 500px; height: 570px; margin: 30px;">
-      <div class="card-header"><strong>Project 1</strong></div>
-      <div class="card-body">
-        <p><strong>Description: </strong>asdadsdas</p>
-        <button type="button" class="btn btn-success" ><strong>Add To Cart</strong></button>
-      </div>
+
+<div class="container" style="justify-content: center">
+  <div *ngFor="let project of projects" class="card"
+    style="width: 50%; height: auto; margin: 2%;">
+    <div class="card-header"><strong>{{project.name | uppercase}}</strong></div>
+    <div class="card-body">
+      <p *ngIf="project.imgSrc" style="text-align: center"><img src='{{project.imgSrc}}' width=100%></p>
+      <p><strong>Description: </strong>{{project.description}}</p>
+      <a [routerLink]="['/details', project.id]" routerLinkActive="active">More Details</a>
     </div>
   </div>
+</div>

@@ -10,6 +10,10 @@ import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './projects/projects.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectService } from './services/project.service';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
@@ -20,14 +24,17 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     FooterComponent,
     ResumeComponent,
     ProjectsComponent,
+    ContactComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     PdfViewerModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
