@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\" >\n    <hr>\n     <div class=\"row\">\n       <div class=\"col\">\n             © 2021 David Yuan App All rights reserved    \n      </div>\n       <div class=\"col\"[routerLink]=\"['/resume']\">\n          Click Here For My Resume!\n       </div>\n     </div>\n   ";
+    __webpack_exports__["default"] = "<div class=\"container\" >\n    <hr>\n     <div class=\"row\">\n       <div class=\"col\">\n      </div>\n      <div class=\"col\">\n      <button type=\"button\" class=\"btn btn-primary\" [routerLink]=\"['/resume']\">View Resume</button>\n      </div>\n     </div>\n   ";
     /***/
   },
 
@@ -171,7 +171,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div class=\"container\" style=\"justify-content: center\">\n  <div *ngFor=\"let project of projects\" class=\"card\"\n    style=\"width: 50%; height: auto; margin: 2%;\">\n    <div class=\"card-header\"><strong>{{project.name | uppercase}}</strong></div>\n    <div class=\"card-body\">\n      <p *ngIf=\"project.imgSrc\" style=\"text-align: center\"><img src='{{project.imgSrc}}' width=100%></p>\n      <p><strong>Description: </strong>{{project.description}}</p>\n      <p><strong>Link: </strong> <a href='{{project.link}}'>{{project.link}}</a> </p>\n      <a [routerLink]=\"['/details', project.id]\" routerLinkActive=\"active\">More Details</a>\n    </div>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "\n<div class=\"container\" style=\"justify-content: center\">\n  <div *ngFor=\"let project of projects\" class=\"card\"\n    style=\"width: 50%; height: auto; margin: 2%;\">\n    <div class=\"card-header\"><strong>{{project.name | uppercase}}</strong></div>\n    <div class=\"card-body\">\n      <p *ngIf=\"project.imgSrc\" style=\"text-align: center\"><img src='{{project.imgSrc}}' width=100%></p>\n      <p><strong>Description: </strong>{{project.description}}</p>\n      <p><strong>Link: </strong> <a href='{{project.link}}'>{{project.link}}</a> </p>\n      <button type=\"button\" class=\"btn btn-primary\" [routerLink]=\"['/details', project.id]\">More Details</button>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
