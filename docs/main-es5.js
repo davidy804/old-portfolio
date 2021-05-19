@@ -1928,7 +1928,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         imgSrc: './assets/images/portfolio1.png',
         caption: 'This website is being hosted by Github Pages. The website was built using the Angular framework. In order to build the site using Angular, the files need to be outputted to a /docs folder. This was the command that was ran to create the folder with the necessary files.'
       }, {
-        imgSrc: './asssets/images/portfolio2.png',
+        imgSrc: './assets/images/portfolio2.png',
         caption: 'This is the html for the projects component. It pulls information from other files to decrease clutter and increase scalability.'
       }, {
         imgSrc: './assets/images/portfolio3.png',
