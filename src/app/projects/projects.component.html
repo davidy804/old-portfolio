@@ -6,6 +6,7 @@
     <div class="card-body">
       <p *ngIf="project.imgSrc" style="text-align: center"><img src='{{project.imgSrc}}' width=100%></p>
       <p><strong>Description: </strong>{{project.description}}</p>
+      <p><strong>Link: </strong> <a href='{{project.link}}'>{{project.link}}</a> </p>
       <a [routerLink]="['/details', project.id]" routerLinkActive="active">More Details</a>
     </div>
   </div>

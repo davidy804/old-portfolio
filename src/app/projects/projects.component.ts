@@ -18,19 +18,16 @@ export class ProjectsComponent implements OnInit {
     private projectService: ProjectService,
     private route: ActivatedRoute
     ) { }
-
+    
   ngOnInit() {
     this.getProjects();
     this.projects = ProjectItems;
     this.selectedProject = this.projects[0];
   }
-
   onclick(inputProject: ProjectModel){
     this.selectedProject = inputProject;
   }
-
   getProjects(): void {
     this.projectService.getProjects().subscribe(data=>this.projects=data);
   }
-
 }

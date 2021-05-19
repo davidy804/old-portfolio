@@ -5,7 +5,6 @@ import { ProjectService } from '../services/project.service';
 import { ProjectModel } from '../shared/project-model';
 import { switchMap } from 'rxjs/operators';
 
-
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -21,7 +20,6 @@ export class DetailsComponent implements OnInit {
     private location: Location
     ) { }
 
-
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
     console.log('id-');
@@ -36,9 +34,7 @@ export class DetailsComponent implements OnInit {
       }
     );
   }
-
   goBack(): void{
     this.location.back();
   }
-
 }

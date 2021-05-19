@@ -5,10 +5,11 @@
       <div class="card-body">
         <p *ngIf="project.imgSrc" style="text-align: center"><img src='{{project.imgSrc}}' width=100%></p>
         <p><strong>Description: </strong>{{project.description}}</p>
-        <p><strong>Details</strong></p>
+        <p><strong>Link: </strong><a href='{{project.link}}'>{{project.link}}</a></p>
+        <p><strong>Details: </strong></p>
           <div class="card-body" *ngFor="let detail of project.details">
-            <p *ngIf="detail.imgSrc"><img src='{{detail.imgSrc}}'></p>
-            <p *ngIf="detail.caption">{{detail.caption}}</p>
+            <p *ngIf="detail.imgSrc"><img src='{{detail.imgSrc}}' width=100%></p>
+            <p *ngIf="detail.caption"><b>{{detail.caption}}</b></p>
           </div>
         <div class="container row">
             <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
