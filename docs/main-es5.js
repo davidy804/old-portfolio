@@ -1938,10 +1938,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         caption: 'This is the typescript for the details component. This shows how the "details" button on the Projects tab gets the information. The html file uses "*ngIf" to pull the information for the specific project that was clicked on.'
       }, {
         imgSrc: './assets/images/portfolio5.png',
-        caption: 'The resume component displays a pdf file using PdfViewerModule from the ng2-pdf-viewer module'
+        caption: 'The resume component displays a pdf file using PdfViewerModule from the ng2-pdf-viewer module.'
       }, {
         imgSrc: './assets/images/portfolio6.png',
-        caption: 'Check out the src files in the repository to look at the html and typescript files for all the components.'
+        caption: 'Check out the src files in the repository to look at the html and typescript files for all the components. Link: https://github.com/davidy804/davidy804.github.io'
       }]
     }, {
       id: '2',
