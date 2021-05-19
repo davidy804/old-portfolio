@@ -36,6 +36,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/contact/contact.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/contact/contact.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"card\" style=\"width: 50%; height: auto; margin-left: 25%; padding: 1%;\">\n    <h1>Contact</h1>\n    <br>\n    <p>The best place to contact me is my email.</p>\n    <p>Email: <a href = \"mailto:davidy804@gmail.com\">davidy804@gmail.com</a></p>\n    <p>I will get back to you as soon as I can. Thank you for reaching out!</p>\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/details/details.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/details/details.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div style=\"text-align: center\">\n    <div *ngIf=\"project\" class=\"card\"\n    style=\"width: 50%; height: auto; margin: 30px; display: inline-block; text-align: left;\">\n      <div class=\"card-header\" style=\"font-weight: bold\">{{project.name | uppercase}}</div>\n      <div class=\"card-body\">\n        <p *ngIf=\"project.imgSrc\" style=\"text-align: center\"><img src='{{project.imgSrc}}' width=100%></p>\n        <p><strong>Description: </strong>{{project.description}}</p>\n        <p><strong>Details</strong></p>\n          <div class=\"card-body\" *ngFor=\"let detail of project.details\">\n            <p *ngIf=\"detail.imgSrc\"><img src='{{detail.imgSrc}}'></p>\n            <p *ngIf=\"detail.caption\">{{detail.caption}}</p>\n          </div>\n        <div class=\"container row\">\n            <button type=\"button\" class=\"btn btn-primary\" (click)=\"goBack()\">Back</button>\n        </div>\n      </div>\n    </div>\n  </div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/footer/footer.component.html":
 /*!************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/footer/footer.component.html ***!
@@ -84,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"product-list\" style=\"justify-content: center\">\n    <div class=\"card\"\n      style=\"width: 500px; height: 570px; margin: 30px;\">\n      <div class=\"card-header\"><strong>Project 1</strong></div>\n      <div class=\"card-body\">\n        <p><strong>Description: </strong>asdadsdas</p>\n        <button type=\"button\" class=\"btn btn-success\" ><strong>Add To Cart</strong></button>\n      </div>\n    </div>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"container\" style=\"justify-content: center\">\n  <div *ngFor=\"let project of projects\" class=\"card\"\n    style=\"width: 50%; height: auto; margin: 2%;\">\n    <div class=\"card-header\"><strong>{{project.name | uppercase}}</strong></div>\n    <div class=\"card-body\">\n      <p *ngIf=\"project.imgSrc\" style=\"text-align: center\"><img src='{{project.imgSrc}}' width=100%></p>\n      <p><strong>Description: </strong>{{project.description}}</p>\n      <a [routerLink]=\"['/details', project.id]\" routerLinkActive=\"active\">More Details</a>\n    </div>\n  </div>\n</div>");
 
 /***/ }),
 
@@ -453,6 +479,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./projects/projects.component */ "./src/app/projects/projects.component.ts");
 /* harmony import */ var ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng2-pdf-viewer */ "./node_modules/ng2-pdf-viewer/fesm2015/ng2-pdf-viewer.js");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _services_project_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
+
+
+
+
 
 
 
@@ -476,14 +510,17 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
             _resume_resume_component__WEBPACK_IMPORTED_MODULE_8__["ResumeComponent"],
             _projects_projects_component__WEBPACK_IMPORTED_MODULE_10__["ProjectsComponent"],
+            _contact_contact_component__WEBPACK_IMPORTED_MODULE_12__["ContactComponent"],
+            _details_details_component__WEBPACK_IMPORTED_MODULE_15__["DetailsComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
             ng2_pdf_viewer__WEBPACK_IMPORTED_MODULE_11__["PdfViewerModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_13__["HttpClientModule"],
         ],
-        providers: [],
+        providers: [_services_project_service__WEBPACK_IMPORTED_MODULE_14__["ProjectService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
@@ -506,6 +543,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resume/resume.component */ "./src/app/resume/resume.component.ts");
 /* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects/projects.component */ "./src/app/projects/projects.component.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
+
+
 
 
 
@@ -514,8 +555,126 @@ const appRoutes = [
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"] },
     { path: 'resume', component: _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__["ResumeComponent"] },
     { path: 'projects', component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_3__["ProjectsComponent"] },
+    { path: 'contact', component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_4__["ContactComponent"] },
+    { path: 'details/:id', component: _details_details_component__WEBPACK_IMPORTED_MODULE_5__["DetailsComponent"] },
     { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/contact/contact.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/contact/contact.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QvY29udGFjdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/contact/contact.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/contact/contact.component.ts ***!
+  \**********************************************/
+/*! exports provided: ContactComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactComponent", function() { return ContactComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ContactComponent = class ContactComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-contact',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./contact.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/contact/contact.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./contact.component.css */ "./src/app/contact/contact.component.css")).default]
+    })
+], ContactComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/details/details.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/details/details.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2RldGFpbHMvZGV0YWlscy5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/details/details.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/details/details.component.ts ***!
+  \**********************************************/
+/*! exports provided: DetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DetailsComponent", function() { return DetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _services_project_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+
+
+let DetailsComponent = class DetailsComponent {
+    constructor(projectService, route, location) {
+        this.projectService = projectService;
+        this.route = route;
+        this.location = location;
+    }
+    ngOnInit() {
+        const id = this.route.snapshot.params['id'];
+        console.log('id-');
+        console.log(id);
+        this.projectService.getProjects().subscribe(data => this.projects = data);
+        this.project = this.projectService.returnProject(id);
+        this.route.params.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((params) => this.projectService.getProject(+params['id']))).subscribe(data => {
+            this.project = data;
+        });
+    }
+    goBack() {
+        this.location.back();
+    }
+};
+DetailsComponent.ctorParameters = () => [
+    { type: _services_project_service__WEBPACK_IMPORTED_MODULE_4__["ProjectService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"] }
+];
+DetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-details',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./details.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/details/details.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./details.component.css */ "./src/app/details/details.component.css")).default]
+    })
+], DetailsComponent);
+
 
 
 /***/ }),
@@ -684,13 +843,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function() { return ProjectsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_project_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/project.service */ "./src/app/services/project.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _shared_projectitems__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/projectitems */ "./src/app/shared/projectitems.ts");
+
+
+
 
 
 let ProjectsComponent = class ProjectsComponent {
-    constructor() { }
+    constructor(projectService, route) {
+        this.projectService = projectService;
+        this.route = route;
+    }
     ngOnInit() {
+        this.getProjects();
+        this.projects = _shared_projectitems__WEBPACK_IMPORTED_MODULE_4__["ProjectItems"];
+        this.selectedProject = this.projects[0];
+    }
+    onclick(inputProject) {
+        this.selectedProject = inputProject;
+    }
+    getProjects() {
+        this.projectService.getProjects().subscribe(data => this.projects = data);
     }
 };
+ProjectsComponent.ctorParameters = () => [
+    { type: _services_project_service__WEBPACK_IMPORTED_MODULE_2__["ProjectService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
+];
 ProjectsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-projects',
@@ -745,6 +926,125 @@ ResumeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     })
 ], ResumeComponent);
 
+
+
+/***/ }),
+
+/***/ "./src/app/services/project.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/project.service.ts ***!
+  \*********************************************/
+/*! exports provided: ProjectService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectService", function() { return ProjectService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _shared_projectitems__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/projectitems */ "./src/app/shared/projectitems.ts");
+
+
+
+
+const httpOptions = {
+    headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' })
+};
+let ProjectService = class ProjectService {
+    constructor(http) {
+        this.http = http;
+        this.projectUrl = 'api/ProjectItems';
+    }
+    getProjects() {
+        return this.http.get(this.projectUrl);
+    }
+    getProject(id) {
+        const url = `${this.projectUrl}/${id}`;
+        return this.http.get(url);
+    }
+    returnProjects() {
+        return _shared_projectitems__WEBPACK_IMPORTED_MODULE_3__["ProjectItems"];
+    }
+    returnProject(id) {
+        return _shared_projectitems__WEBPACK_IMPORTED_MODULE_3__["ProjectItems"].filter(project => project.id === id)[0];
+    }
+};
+ProjectService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ProjectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ProjectService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/projectitems.ts":
+/*!****************************************!*\
+  !*** ./src/app/shared/projectitems.ts ***!
+  \****************************************/
+/*! exports provided: ProjectItems */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectItems", function() { return ProjectItems; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+const ProjectItems = [
+    {
+        id: '1',
+        name: 'Portfolio',
+        description: 'This website that you are browsing right now. Built with Angular and Git.',
+        imgSrc: './assets/images/portfolio.png',
+        details: [
+            {
+                imgSrc: 'img 1',
+                caption: '//123',
+            },
+            {
+                imgSrc: 'img 2',
+                caption: '//321',
+            }
+        ],
+    },
+    {
+        id: '2',
+        name: 'Yuans Robos',
+        description: 'E-commerce website with user authentication, form validation, and commission built with HTML, SQL, PHP, JS.',
+        imgSrc: './assets/images/robos.png',
+        details: [
+            {
+                imgSrc: './assets/images/robos1.png',
+                caption: 'log in authentication',
+            },
+            {
+                imgSrc: './assets/images/robos2.png',
+                caption: 'different tabs',
+            }
+        ],
+    },
+    {
+        id: '3',
+        name: 'Simple Banking',
+        description: 'A simple banking program in terminal built with C++.',
+        imgSrc: './assets/images/bank.png',
+        details: [
+            {
+                imgSrc: 'img 1',
+                caption: '//abc',
+            },
+            {
+                imgSrc: 'img 2',
+                caption: '//cba',
+            }
+        ],
+    },
+];
 
 
 /***/ }),
