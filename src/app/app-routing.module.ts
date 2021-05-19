@@ -5,7 +5,11 @@ import { appRoutes } from './appRoutes';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(appRoutes, {
+    enableTracing: false, 
+    scrollPositionRestoration: 'top'
+  })
+],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

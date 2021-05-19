@@ -404,7 +404,11 @@ let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(_appRoutes__WEBPACK_IMPORTED_MODULE_3__["appRoutes"])],
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(_appRoutes__WEBPACK_IMPORTED_MODULE_3__["appRoutes"], {
+                enableTracing: false,
+                scrollPositionRestoration: 'top'
+            })
+        ],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
     })
 ], AppRoutingModule);
